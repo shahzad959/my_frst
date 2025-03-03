@@ -14,9 +14,11 @@ const FindDoctorSearch = () => {
     const handleDoctorSelect = (speciality) => {
         setSearchDoctor(speciality);
         setShowSpecialities(false);
-        navigate(`/instant-consultation?speciality=${speciality}`);
-    };
+        navigate(`/instant-consultation-booking?speciality=${speciality}`);
 
+    };
+     
+        
     return (
         <div className='find-doctor-search'>
             <h1>Find a Doctor</h1>
