@@ -9,6 +9,7 @@ import FindDoctorSearch from './Components/FindDoctorSearch/FindDoctorSearch';
 import BookingConsultation from './Components/BookingConsultation';
 
 import './App.css';
+import Notification from './Components/Notification/Notification';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/instant-consultation-booking" element={<InstantConsultationBooking />} />
             <Route path="/find-doctor-search" element={<FindDoctorSearch />} />
             <Route path="/booking-consultation" element={<BookingConsultation />} /> {/* ✅ Fixed route */}
+            <Route path="<notification>" element={<Notification/>}/> 
           </Routes>
         </BrowserRouter>
     </div>
